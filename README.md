@@ -5,7 +5,7 @@
 npm install
 ```
 
-### Compiles and arun the app
+### Compiles and run the app
 ```
 npm run serve
 ```
