@@ -14,7 +14,6 @@ main {
   min-height: 100vh;
   overflow: hidden;
   display: flex;
- 
   align-items: center;
 }
 </style>
