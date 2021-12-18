@@ -15,8 +15,8 @@
       </div>
     </a-layout-content>
     <a-pagination
-      :total="totalPage"
-      :show-total="total => `Total ${total} Pages`"
+      :total="4000"
+      :show-total="total => `Total 200 Pages`"
       :default-current="1"
       :page-size="20"
       @change="handlePaginate"

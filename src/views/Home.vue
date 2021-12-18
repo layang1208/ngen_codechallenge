@@ -40,8 +40,7 @@ export default {
     return {
       apiKey: process.env.VUE_APP_API_API_KEY,
       movies: [],
-   
-
+  
     };
   },
 
