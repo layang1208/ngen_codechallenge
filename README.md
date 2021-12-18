@@ -9,3 +9,6 @@ npm install
 ```
 npm run serve
 ```
+
+### Mind Map
+https://github.com/layang1208/ngen_codechallenge/blob/main/Movie%20Discovery%20Website.png
