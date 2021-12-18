@@ -39,9 +39,8 @@ export default {
   data() {
     return {
       apiKey: process.env.VUE_APP_API_API_KEY,
-      imageBaseUrl: process.env.VUE_APP_API_POSTER_BASE_URL,
       movies: [],
-      current: null,
+   
 
     };
   },
@@ -55,7 +54,6 @@ export default {
       const { data } = await HTTP.get(`/popular?${this.apiKey}&page=1`);
       console.log(data);
       this.movies = data.results;
-      this.current = data.page;
     },
     async handlePaginate(pageNumber) {
       const { data } = await HTTP.get(
@@ -63,7 +61,6 @@ export default {
       );
       console.log(data);
       this.movies = data.results;
-      this.current = data.page;
     },
 
     handleCardClick(id) {

@@ -40,10 +40,7 @@ export default {
   data() {
     return {
       apiKey: process.env.VUE_APP_API_API_KEY,
-      imageBaseUrl: process.env.VUE_APP_API_POSTER_BASE_URL,
       movies: [],
-      current: null,
-      totalPage: null,
     };
   },
 
@@ -56,8 +53,6 @@ export default {
       const { data } = await HTTP.get(`/top_rated?${this.apiKey}&page=1`);
       console.log(data);
       this.movies = data.results;
-      this.current = data.page;
-      this.totalPage = data.total_pages;
     },
     async handlePaginate(pageNumber) {
       const { data } = await HTTP.get(
@@ -65,7 +60,7 @@ export default {
       );
       console.log(data);
       this.movies = data.results;
-      this.current = data.page;
+
     },
 
     handleCardClick(id) {
